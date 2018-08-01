@@ -1,0 +1,13 @@
+section.topbar
+    .row
+        .col.d-flex.justify-content-between.flex-nowrap
+            .social-wrapper
+                mixin social_ico(arr)
+                    ul.social.social--top
+                        each val in arr
+                            li.social__item.social__item--top
+                                a(href="javascript:void(0)").social__link.social__link--top= arr
+
+                +social_ico()
+            .auth
+                
