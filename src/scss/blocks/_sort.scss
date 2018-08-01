@@ -1,3 +1,5 @@
+$blue: rgb(63, 81, 181);
+
 .sort {
     display: flex;
     &_title {
@@ -16,4 +18,12 @@
     padding: 10px 30px;
     font-variant: small-caps;
     letter-spacing: 0.8px;
+    border-radius: 15px;
+    background-color: rgb(245, 245, 245);
+    &:hover {
+        color: $blue;
+        border-color: $blue;
+        background-color: transparent;
+
+    }
 }
