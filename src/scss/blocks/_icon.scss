@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    color: #707070;
     &--gray {
        filter: grayscale(1);
        transition: filter .1s linear,  transform .1s linear;
