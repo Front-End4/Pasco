@@ -9,3 +9,12 @@ section.topbar
                         each val, index in [[['gray', 'small'],['fab','fa-facebook-f']], [['gray', 'small'],['fab','fa-twitter']],[['gray', 'small'],['fab','fa-pinterest-p']],[['gray', 'small'],['fab','fa-vk']],[['gray', 'small'],['fab','fa-google-plus-g']],[['gray', 'small'],['fab','fa-behance']],[['gray', 'small'],['fab','fa-dribbble']],[['gray', 'small'],['fab','fa-instagram']]]
                             li.social__item: +icon(val[0], val[1])
                 .auth
+                    ul.icongroup
+                        li.icongroup__item
+                            a(href='javascript:void(0)').icon.icon--gray.icon--small
+                            span.icon__text sign in
+                                i.fas.fa-user-circle
+                        li.icongroup__item
+                            a(href='javascript:void(0)').icon.icon--gray.icon--small.icon--dropdown
+                                span.icon__text eng
+                                i.fas.fa-globe-americas
