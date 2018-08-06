@@ -1,4 +1,44 @@
 .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	
+	&--gray {
+		color: #707070;
+		filter: grayscale(1);
+		transition: filter .1s linear,  transform .1s linear;
+	   	&:hover {
+			filter: brightness(1.2);
+			transform: scale(1.1);
+			z-index: 2;
+			filter: grayscale(1);
+			text-decoration: none;
+	   }
+	}
+	&--small {
+		font-size: 16px;
+		font-weight: 400;
+		height: 28px;
+		width: 28px;
+		line-height: 1.2;
+	}
+	&--big {
+		font-size: 18px;
+		height: 36px;
+		width: 36px;
+		line-height: 1;
+	}
+	&--round {
+		border-radius: 50%;
+		border: none;
+		background-color: transparent;
+		box-shadow: none;
+		color: white;
+	}
+	&--pink {
+		background-color: #ff4081;
+	}
     display: flex;
     align-items: center;
     justify-content: center;
