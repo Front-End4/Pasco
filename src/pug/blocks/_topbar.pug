@@ -1,9 +1,11 @@
+include ./_icon.pug
+
 section.topbar
     .container
         .row
             .col.d-flex.justify-content-between.flex-nowrap
                 .social-wrapper
                     ul.social.social--top
-                        each val in [['gray', 'small'],['fab','fa-google-plus'], ['gray', 'small'],['fab','fa-google-plus']]
-                            +icon(val)
+                        each val, index in [[['gray', 'small'],['fab','fa-google-plus']], [['gray', 'small'],['fab','fa-google-plus']]]
+                            li.social__item: +icon(val[0], val[1])
                 .auth
