@@ -1,10 +1,11 @@
+include ./_icon.pug
+
 section.topbar
-    .row
-        .col.d-flex.justify-content-between.flex-nowrap
-            .social-wrapper
-                ul.social.social--top
-                    each social_ico in ['fab fa-google-plus']
-                        li.social__item.social__item--top
-                            a(href="javascript:void(0)").social__link.social__link--top.icon.icon--gray.icon--small
-                                i(class="" +social_ico)
-            .auth
+    .container
+        .row
+            .col.d-flex.justify-content-between.flex-nowrap
+                .social-wrapper
+                    ul.social.social--top
+                        each val, index in [[['gray', 'small'],['fab','fa-facebook-f']], [['gray', 'small'],['fab','fa-twitter']],[['gray', 'small'],['fab','fa-pinterest-p']],[['gray', 'small'],['fab','fa-vk']],[['gray', 'small'],['fab','fa-google-plus-g']],[['gray', 'small'],['fab','fa-behance']],[['gray', 'small'],['fab','fa-dribbble']],[['gray', 'small'],['fab','fa-instagram']]]
+                            li.social__item: +icon(val[0], val[1])
+                .auth

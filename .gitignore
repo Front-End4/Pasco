@@ -1,4 +1,8 @@
 dist/
 src/html/
 src/css/
+<<<<<<< HEAD
 prepros-6.config
+=======
+prepros-6.config
+>>>>>>> ed526d26de45794ea4fe90b3554589166fe80bbf
