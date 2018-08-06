@@ -22,4 +22,15 @@
         width: 28px;
         line-height: 1.2;
     }
+    &__text{
+        text-decoration: none;
+        opacity: 0.5;
+        color: white;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        font-variant: small-caps;
+
+    }
 }
