@@ -1,1 +1,7 @@
 // file to import mixins
+@mixin title-widget($color) {
+    color: $color;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

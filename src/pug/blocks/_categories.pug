@@ -1,0 +1,8 @@
+- var values = ['Photography', 'Illustration', 'Graphic Design', 'Web design', 'Vedeography'];
+- var numbers = [19,15,36,22,17]
+
+h3 Categories
+ul
+  each val, index in values.length ? values : ['There are no values']
+    li= val
+      span= numbers[index]

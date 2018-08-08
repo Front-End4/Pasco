@@ -4,12 +4,10 @@ mixin navigation(arr)
             li.nav__item
                 if Array.isArray(val)
                     a(href="javascript:void(0)").nav__link= val[0]
-                    ul.submav
+                    ul.subnav
                         each subval, index in val
                             if index > 0
                                 li.subnav__item
                                     a(href="javascript:void(0)")= subval
                 else
                     a(href="javascript:void(0)").nav__link= val
-
-//- +navigation(['Home',['Portfolio','subnav','subnav'],'Blog','Pages','Shop','components','Features'])

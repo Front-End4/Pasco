@@ -1,4 +1,7 @@
-dist/
+dist/css/
+dist/*.html
+dist/js/
 src/html/
 src/css/
+src/dist/
 prepros-6.config
