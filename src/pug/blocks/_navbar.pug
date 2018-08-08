@@ -1,0 +1,17 @@
+.navbar
+    .container
+        .row
+            .col
+                .navbar__block.d-flex.justify-content-between.flex-nowrap.align-items-center
+                    .logo
+                        p Pasco
+                    +navigation(['Home',['Portfolio','subnav','subnav'],'Blog','Pages','Shop','components','Features'])
+                    ul.icongroup
+                        li.icongroup__item
+                            a(href='javascript:void(0)').icon.icon--gray
+                                i.fas.fa-user-circle
+                                span.icon__text sign in         
+                        li.icongroup__item
+                            a(href='javascript:void(0)').icon.icon--gray.icon--dropdown
+                                i.fas.fa-globe
+                                span.icon__text eng
