@@ -1,12 +1,19 @@
-include ./_icon.pug
-
 section.topbar
     .container
         .row
-            .col.d-flex.justify-content-between.flex-nowrap
-                .social-wrapper
-                    ul.social.social--top
-                        each val, index in [[['gray', 'small'],['fab','fa-facebook-f']], [['gray', 'small'],['fab','fa-twitter']],[['gray', 'small'],['fab','fa-pinterest-p']],[['gray', 'small'],['fab','fa-vk']],[['gray', 'small'],['fab','fa-google-plus-g']],[['gray', 'small'],['fab','fa-behance']],[['gray', 'small'],['fab','fa-dribbble']],[['gray', 'small'],['fab','fa-instagram']]]
-                            li.social__item: +icon(val[0], val[1])
-                .auth
-                    include ./icongroup.pug
+            .col
+                .topbar__block.d-flex.justify-content-between.flex-nowrap.align-items-center
+                    .social-wrapper
+                        ul.social.social--top
+                            each val, index in [[['gray', 'small'],['fab','fa-facebook-f']], [['gray', 'small'],['fab','fa-twitter']],[['gray', 'small'],['fab','fa-pinterest-p']],[['gray', 'small'],['fab','fa-vk']],[['gray', 'small'],['fab','fa-google-plus-g']],[['gray', 'small'],['fab','fa-behance']],[['gray', 'small'],['fab','fa-dribbble']],[['gray', 'small'],['fab','fa-instagram']]]
+                                li.social__item: +icon(val[0], val[1])
+                    .auth
+                        ul.icongroup
+                            li.icongroup__item
+                                a(href='javascript:void(0)').icon.icon--gray
+                                    i.fas.fa-user-circle
+                                    span.icon__text sign in         
+                            li.icongroup__item
+                                a(href='javascript:void(0)').icon.icon--gray.icon--dropdown
+                                    i.fas.fa-globe
+                                    span.icon__text eng
