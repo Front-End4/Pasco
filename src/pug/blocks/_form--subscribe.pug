@@ -1,0 +1,10 @@
+form.form.form__subscribe.form__subscribe--blog
+    label.form__label.form__label--blog(for="name") Name
+        input.input.input__blog(type="name" placeholder='Name' id='name')
+    label.form__label.form__label--blog(for="email") Email
+        input.input.input__blog(type="mail" id='email' placeholder='email@adress.com')
+    button.btn.btn--blog.btn--big.btn--blue.btn--square(type="submit") subcribe
+.form__social.form__social--blog
+     ul.social.social--blog
+        each val, index in [[['big', 'round', 'facebook'],['fab','fa-facebook-f']], [['big', 'round', 'twitter'],['fab','fa-twitter']],[['big', 'round', 'vk'],['fab','fa-vk']],[['big', 'round', 'print'],['fab','fa-pinterest-p']],[['big', 'round', 'google'],['fab','fa-google-plus-g']],[['big', 'round', 'dribble'],['fab','fa-dribbble']]]
+            li.social__item.social__item--blog: +icon(val[0], val[1], val[2])

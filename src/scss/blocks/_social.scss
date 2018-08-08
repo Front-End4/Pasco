@@ -4,5 +4,9 @@
     list-style: none;
     &__item {
         display: inline-block;
+        &--blog {
+            margin: 0 5px;
+        }
     }
+
 }
