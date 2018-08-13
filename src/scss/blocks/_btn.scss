@@ -1,0 +1,43 @@
+.btn {
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Montserrat;
+    font-variant: small-caps;
+    line-height: 2.2;
+    transition: filter .1s linear;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+        filter: brightness(1.2);
+    }
+    &--sort {
+        padding: 10px 30px;
+        letter-spacing: 0.8px;
+        border-radius: 15px;
+        background-color: rgb(245, 245, 245);
+        color: black;
+        &:hover {
+            color: $blue;
+            border-color: $blue;
+            background-color: transparent;
+    
+        }
+    }
+    &--big {
+        width: 100%;
+    }
+    &--square {
+        border-radius: 4px;
+    }
+    &--blue {
+        background-color: #3f51b5;
+    }
+    &--blog {
+        margin-top: 10px;
+    }
+    &--ellipse {
+        border-radius: 22px;
+        padding: 0 30px;
+    }
+}

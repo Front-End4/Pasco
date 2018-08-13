@@ -10,7 +10,7 @@
 	}
 	&:hover {
 		filter: brightness(1.2);
-		transform: scale(1.1);
+		// transform: scale(1.1);
 		z-index: 2;
 		text-decoration: none;
 		cursor: pointer;
@@ -67,5 +67,23 @@
 		vertical-align: top;
 		width: 0.35em;
 		margin-left: 8px;
+	}
+	&--facebook {
+		background-color: #3b5999;
+	}
+	&--twitter {
+		background-color: #55acee;
+	}
+	&--vk {
+		background-color: #4c75a3;
+	}
+	&--print {
+		background-color: #ff2e56;
+	}
+	&--google {
+		background-color: #34465d;
+	}
+	&--dribble {
+		background-color: #ea4c89;
 	}
 }

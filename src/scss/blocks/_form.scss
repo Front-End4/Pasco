@@ -1,0 +1,59 @@
+.form {
+    width: 100%;
+    &--section{
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        background-image: url(../img/subscribe-bg.jpg);
+    }
+    &__search {
+        display: flex;
+    }
+    &__subscribe {
+        display: flex;
+        &--blog{
+            flex-direction: column;
+            flex: 1;
+        }
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        &--blog {
+        opacity: 0.87;
+        color: black;
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2.25;
+        }
+        &--subscribe {
+            white-space: nowrap;
+        }
+    }
+    &__social {
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__separator {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+        opacity: 0.87;
+        color: black;
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2.2;
+        &:before, &:after {
+            content: '';
+            height: 1px;
+            background-color:black;
+            width: 100%;
+            display: block;
+            margin: 18px 10px 0 10px;
+            
+        }
+    }
+}

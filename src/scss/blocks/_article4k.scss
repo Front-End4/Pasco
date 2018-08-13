@@ -1,4 +1,11 @@
+.article{
+    width: 825px;
+    height: 625px;
+    padding: 0;
+    margin: 0;
+}
 .article__text{
+    
      h2{
         opacity: 0.87;
         color: black;
@@ -6,6 +13,9 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 1.5;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        
     }
     p{  
         opacity: 0.87;
@@ -19,7 +29,9 @@
         
     }
     hr{
-        width: 100%;
+        width: 825px;
+
+        
         height: 1px;
         opacity: 0.12;
         background-color: black;
@@ -29,7 +41,7 @@
     padding-bottom: 56%;
 
 }
-.article{
-    width: 825px;
-    height: 625px;
+.author__img{
+    width: 54px;
 }
+
