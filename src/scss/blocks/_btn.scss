@@ -1,0 +1,26 @@
+.btn {
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Montserrat;
+    font-variant: small-caps;
+    line-height: 1.5;
+    padding: 10px 0;
+    transition: filter .1s linear;
+    &:hover {
+        filter: brightness(1.2);
+        cursor: pointer;
+    }
+    &--big {
+        width: 100%;
+    }
+    &--square {
+        border-radius: 4px;
+    }
+    &--blue {
+        background-color: #3f51b5;
+    }
+    &--blog {
+        margin-top: 10px;
+    }
+}
