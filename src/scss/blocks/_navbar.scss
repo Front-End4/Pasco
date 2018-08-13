@@ -1,0 +1,13 @@
+.navbar {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    &__block {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        height: 70px;
+    }
+}
