@@ -1,7 +1,13 @@
 .slide {
-  	text-align: center;
+	  text-align: center;
+	  position: relative;
+	  z-index: 2;
+	  height: 100%;
+	  display: flex;
+	  align-items: center;
 	&__wrap {
 		max-width: 750px;
+		margin: 0 auto;
 	}
 	&__category {
 		text-decoration: none;
