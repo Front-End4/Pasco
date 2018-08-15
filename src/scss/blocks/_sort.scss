@@ -2,28 +2,22 @@ $blue: rgb(63, 81, 181);
 
 .sort {
     display: flex;
-    &_title {
+    &__title {
         font-weight: 700;
         font-variant: small-caps;
         letter-spacing: 0.8px;
     }
-    &_items {
+    &__items {
         display: flex;
         justify-content: space-between;
     }
-}
-
-.btn--sort {
-    display: inline-block;
-    padding: 10px 30px;
-    font-variant: small-caps;
-    letter-spacing: 0.8px;
-    border-radius: 15px;
-    background-color: rgb(245, 245, 245);
-    &:hover {
-        color: $blue;
-        border-color: $blue;
-        background-color: transparent;
-
+    .btn--sort {
+        margin-left: 15px;
+        padding: 10px 30px;
+        border-radius: 15px;
+        &:hover {
+            color: $blue;
+            border: 1px solid $blue;
+        }
     }
 }
