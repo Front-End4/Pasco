@@ -4,16 +4,8 @@ $(document).ready(function () {
     var headerSwiper = new Swiper('.swiper-container', {
         speed: 400,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
-    });
-    $('[data-fancybox="gallery"]').fancybox({
-        beforeShow: function (instance, slide) {
-            $(".galerry__item").css("position", "relative");
-        },
-        beforeClose: function () {
-            $(".galerry__item").css("position", "absolute");
+            nextEl: '.js-slider-button-next',
+            prevEl: '.js-slider-button-prev',
         }
     });
     $(".owl-carousel").owlCarousel({
