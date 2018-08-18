@@ -1,0 +1,46 @@
+// DELETE .form-mail__darkbg after build!
+
+.form-mail{
+    color: white;
+    &__input,&__textarea{
+        color:white;
+        opacity: 0.5;
+        border: 1px solid white;
+        border-radius: 4px;
+        background-color: transparent;
+        width: 100%;
+        line-height: 2.4;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        outline: none;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+
+    }
+    &__textarea{
+        resize: none;
+        display: block;
+    }
+    &__caption{
+        text-transform: uppercase;
+    }
+    &__submit{
+        background-color: #303030;
+        border-radius: 4px;
+        width: 100%;
+        border-color: transparent;
+        padding: 9px;
+    }
+    &__field{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.form-mail__darkbg{
+    background-color: #212121;
+    max-width: 280px;
+    padding: 20px;
+}
