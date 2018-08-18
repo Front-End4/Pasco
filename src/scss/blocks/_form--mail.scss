@@ -32,6 +32,11 @@
         width: 100%;
         border-color: transparent;
         padding: 9px;
+        transition: .3s ease-in-out background-color;
+        &:hover,&:active{
+            background-color: #6a6868;
+            transform: scale(1.01);
+        }
     }
     &__field{
         margin-top: 10px;
