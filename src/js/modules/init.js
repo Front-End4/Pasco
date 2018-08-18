@@ -1,11 +1,15 @@
-$(document).on('ready', function () {
+$(document).ready(function () {
 
+    console.log(123);
     var headerSwiper = new Swiper('.swiper-container', {
         speed: 400,
-        spaceBetween: 100,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.js-slider-button-next',
+            prevEl: '.js-slider-button-prev',
         }
+    });
+    $(".owl-carousel").owlCarousel({
+        items: 7,
+        loop: true,
     });
 })
