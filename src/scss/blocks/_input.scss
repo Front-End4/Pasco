@@ -8,6 +8,8 @@
         &--subscribe {
             align-items: center;
             justify-content: space-between;
+            flex: 1;
+            flex-wrap: wrap;
         }
     }
     &__subscribe {
@@ -23,7 +25,8 @@
         opacity: 0.38;
         background-color: #303030;
         border: 1px solid white;
-        width: 25%;
+        flex: 1.5;
+        margin: 0 40px;
     }
     &__search {
         outline: none;
