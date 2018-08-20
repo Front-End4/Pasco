@@ -2,9 +2,11 @@ $blue: rgb(63, 81, 181);
 
 .sort {
     display: flex;
+    align-items: center;
     padding: 15px 0;
     box-shadow: 0 1px 0 #ddd;
     &__title {
+        margin: 0;
         font-weight: 700;
         font-variant: small-caps;
         letter-spacing: 0.8px;
