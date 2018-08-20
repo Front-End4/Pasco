@@ -1,14 +1,26 @@
 .btn {
     border: none;
-    text-transform: uppercase;
     color: white;
     font-variant: small-caps;
     line-height: 2.2;
     transition: filter .1s linear;
     display: inline-block;
     cursor: pointer;
+    text-decoration: none;
     &:hover {
         filter: brightness(1.2);
+    }
+    &--primary {
+        background-color: #303f9f;
+        border-radius: 22px;
+        box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+        color: white;
+        font-size: 24px;
+        line-height: 1.5;
+        font-variant: small-caps;
+        padding: 4px 30px;
+        display: inline-flex;
+        align-items: center;
     }
     &--sort {
         padding: 10px 30px;
