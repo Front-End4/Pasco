@@ -2,6 +2,8 @@ $blue: rgb(63, 81, 181);
 
 .sort {
     display: flex;
+    padding: 15px 0;
+    box-shadow: 0 1px 0 #ddd;
     &__title {
         font-weight: 700;
         font-variant: small-caps;
