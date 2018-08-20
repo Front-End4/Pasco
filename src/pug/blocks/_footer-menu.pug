@@ -1,0 +1,15 @@
+.container
+    .row
+        .col-md-7
+            +navigation(['Home',['Portfolio','subnav','subnav'],'Blog','Pages','Shop','components','Features'])
+        .col-md-3.col-offset-1
+            .form
+                form.form__search.form__search--blog(action="", method="get")
+                    .input.input__flex
+                        input.input__search(type="text" placeholder='Search')
+                        button.icon.icon--big.icon--pink.icon--round.icon--search(type="submit")
+                            i.fas.fa-search
+        .col-md-1
+            a(href='javascript:void(0)').icon.icon--gray.icon--dropdown
+                i.fas.fa-globe
+                span.icon__text eng
