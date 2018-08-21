@@ -35,17 +35,18 @@ html(lang="en")
         footer.footer
             .container
                 .row
-                    .col-3
+                    .col-12.col-sm-6.col-md-3
                         include ./blocks/_accordeon
-                    .col-3
+                    .col-12.col-sm-6.col-md-3
                         include ./blocks/_socwid
-                    .col-3
+                    .col-12.col-sm-6.col-md-3
                         include ./blocks/_flickr-widget
-                    .col-3
+                    .col-12.col-sm-6.col-md-3
                         include ./blocks/_form--mail
+        include ./blocks/_footer-menu
         
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js")
         script(src="./plugins/owl.carousel.js/owl.carousel.min.js")
-        <script src="./plugins/lightbox/js/lightbox.js"></script>
+        script(src="./plugins/lightbox/js/lightbox.js")
         script(src="./js/scripts.js")

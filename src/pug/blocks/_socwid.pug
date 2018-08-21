@@ -1,22 +1,29 @@
-.section.section--black
-    .container
-        .socwid
-            p.socwid__title SOCIAL WIDGET
-            li.socwidgroup__item
-                        a(href='javascript:void(0)').socwid.socwid
-                            img.socwid--facebook(url="https://banner2.kisspng.com/20171216/213/facebook-logo-png-5a35528eaa4f08.7998622015134439826976.jpg")
-            li.socwidgroup__item
-                        a(href='javascript:void(0)').socwid.socwid
-                            img.socwid--twitter(url="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png")
-            li.socwidgroup__item
-                        a(href='javascript:void(0)').socwid.socwid
-                            img.socwid--vk(url="http://pngimg.com/uploads/vkontakte/vkontakte_PNG3.png")
-            li.socwidgroup__item
-                        a(href='javascript:void(0)').socwid.socwid--red
-                            i.fab fa-pinterest
-            li.socwidgroup__item
-                        a(href='javascript:void(0)').socwid.socwid
-                            img.socwid--tumblr(url="https://cdn.icon-icons.com/icons2/808/PNG/512/tumblr_icon-icons.com_66098.png")
-            li.socwidgroup__item
-                        a(href='javascript:void(0)').socwid.socwid--pink
-                            i.fab fa-dribbble
+h3.social__title TWITTER WIDGET
+ul.twitter__list
+    li.twitter__item
+        i.fab.fa-twitter.fa-twetter--blue
+        p.twitter__paragraph &#64;PASCO, Duis commodo elit sed nisi molestie
+        p.twitter__links 2 hours ago  &rarr;         
+            a.twitter__link(href="") Reply
+            a.twitter__link(href="") Retweet
+            a.twitter__link(href="") Favorite
+    li.twitter__item
+        i.fab.fa-twitter.fa-twetter--blue
+        p.twitter__paragraph @PASCO, Duis commodo elit sed nisi molestie
+        p.twitter__links 2 hours ago  &rarr;         
+            a.twitter__link(href="") Reply
+            a.twitter__link(href="") Retweet
+            a.twitter__link(href="") Favorite
+    li.twitter__item
+        i.fab.fa-twitter.fa-twetter--blue
+        p.twitter__paragraph @PASCO, Duis commodo elit sed nisi molestie
+        p.twitter__links 2 hours ago  &rarr;         
+            a.twitter__link(href="") Reply
+            a.twitter__link(href="") Retweet
+            a.twitter__link(href="") Favorite
+
+h3.social__title SOCIAL WIDGET
+.form__social.form__social--blog
+    ul.social.social--blog
+        each val, index in [[['big', 'round', 'facebook'],['fab','fa-facebook-f']], [['big', 'round', 'twitter'],['fab','fa-twitter']],[['big', 'round', 'vk'],['fab','fa-vk']],[['big', 'round', 'print'],['fab','fa-pinterest-p']],[['big', 'round', 'google'],['fab','fa-google-plus-g']],[['big', 'round', 'dribble'],['fab','fa-dribbble']]]
+            li.social__item.social__item--blog: +icon(val[0], val[1], val[2])

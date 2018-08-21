@@ -3,14 +3,14 @@
     text-transform: uppercase;
     &__superwrap{
         display: flex;
+        justify-content: space-between;
+        align-content: space-between;
         flex-wrap: wrap;
-        flex-direction: row;
     }
     &__wrap{
-        width: 85px;
-        height: 85px;
-        margin-left: 5px;
-        margin-bottom: 5px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 8px;
         }
     &__item{
         display: block;
