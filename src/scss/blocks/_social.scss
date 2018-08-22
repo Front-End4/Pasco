@@ -7,6 +7,11 @@
     width: 100%;
     &__item {
         display: inline-block;
+        padding: 1px;
     }
 
+}
+.social--top{
+    position: relative;
+    right: 10px;
 }

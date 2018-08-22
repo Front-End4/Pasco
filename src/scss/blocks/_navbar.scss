@@ -1,8 +1,9 @@
 .navbar {
     position: absolute;
+    
     top: 40px;
     width: 100%;
-    left: 0;
+    
     z-index: 10;
     &__block {
         display: flex;
@@ -10,4 +11,9 @@
         justify-content: space-between;
         height: 70px;
     }
+}
+.__icongroup{
+    position: relative;
+    left: 300px;
+
 }
