@@ -1,8 +1,9 @@
 .btn {
+    outline: none;
     border: none;
     color: white;
     font-variant: small-caps;
-    line-height: 2.2;
+    // line-height: 2.2;
     transition: filter .1s linear;
     display: inline-block;
     cursor: pointer;
@@ -46,10 +47,12 @@
     }
     &--blog {
         margin-top: 10px;
+        padding: 14px 0;
     }
     &--ellipse {
         border-radius: 22px;
         outline: none;
         flex: 1;
+        padding: 12px 0;
     }
 }

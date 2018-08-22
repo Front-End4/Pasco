@@ -2,11 +2,16 @@
     padding: 0;
     margin: 0;
     list-style: none;
+        display: flex;
+        justify-content: space-between;
+    width: 100%;
     &__item {
         display: inline-block;
-        &--blog {
-            margin: 0 5px;
-        }
+        padding: 1px;
     }
 
+}
+.social--top{
+    position: relative;
+    right: 10px;
 }
