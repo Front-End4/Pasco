@@ -3,31 +3,31 @@
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	transition: filter .1s linear,  transform .1s linear;
+	transition: filter .1s linear, transform .1s linear;
 	&--gray {
 		color: #707070;
-		filter: grayscale(1);  
+		filter: grayscale(1);
 	}
 	&:hover {
-		filter: brightness(1.2);
-		// transform: scale(1.1);
+		filter: brightness(1.2); // transform: scale(1.1);
 		z-index: 2;
 		text-decoration: none;
 		cursor: pointer;
-   } 
-   &--white{
-	width: 18px;
-	height: 18px;
-	color: white;
-	font-family: MaterialIcons;
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 90px;
-	&:hover {
-		filter: brightness(1.5);
 	}
-}
-
+	&--white {
+		width: 18px;
+		height: 18px;
+		color: white;
+		font-family: MaterialIcons;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1;
+		padding: 18px 14px;
+		box-sizing: content-box;
+		&:hover {
+			filter: brightness(1.5);
+		}
+	}
 	&--small {
 		font-size: 16px;
 		font-weight: 400;
@@ -56,18 +56,18 @@
 		margin-top: 2px;
 		z-index: 3;
 	}
-    &__text{
-        text-decoration: none;
-        opacity: 0.5;
-        color: white;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 27px;
+	&__text {
+		text-decoration: none;
+		opacity: 0.5;
+		color: white;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 27px;
 		font-variant: small-caps;
 		padding-left: 8px;
 	}
-	&--dropdown:after{
+	&--dropdown:after {
 		border-style: solid;
 		border-width: 0.15em 0.15em 0 0;
 		content: '';

@@ -1,5 +1,7 @@
 .topbar{
 	background-color: #191919;
+	position: relative;
+	z-index: 2;
 	&__block {
 		height: 40px;
 	}

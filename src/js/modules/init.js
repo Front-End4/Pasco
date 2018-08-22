@@ -13,4 +13,8 @@ $(document).ready(function () {
         loop: true,
         dots: false,
     });
+
+    $('.js-dropdown').on('click', ()=>{
+        $('.js-dropdown__body').slideToggle();
+    })
 })

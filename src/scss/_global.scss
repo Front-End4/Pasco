@@ -12,3 +12,17 @@ html, body {
 * {
     box-sizing: border-box;
 }
+.dropdown {
+    position: relative;
+    &__body {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        z-index: 9999999;
+        background-color: white;
+        color: black;
+        display: none;
+        padding: 5px;
+    }
+}
