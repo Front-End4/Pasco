@@ -1,4 +1,50 @@
-.socwidgroup__item{
-    width:38px;
-    height: auto;
+.twitter {
+    &__list {
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        border-bottom: 1px solid rgba(255, 255, 255, .12);
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__paragraph {
+        margin-bottom: 0;
+        opacity: 0.7;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    &__links {
+        margin-top: 0;
+        opacity: 0.5;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &__link {
+        margin-right: 10px;
+        opacity: 0.5;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+.fa-twetter--blue {
+    height: 21px;
+    margin-right: 15px;
+    color: #55acee;
+    float: left;
+}
+
+.social {
+    &__title {
+        color: white;
+    }
 }

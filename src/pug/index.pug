@@ -22,20 +22,31 @@ html(lang="en")
         .blog
             .container
                 .row
-                    .col-lg-9
+                    .col-lg-8
                         include ./blocks/_blog
-                    .col-lg-3
-                        aside
+                    .col-lg-4
+                        aside.blog__aside
                             include ./blocks/_form--search
                             include ./blocks/_categories
                             include ./blocks/_form--subscribe
-                            
+                            include ./blocks/_postbtn
         include ./blocks/_galerry
         include ./blocks/_subscribe
-        include ./blocks/_form--mail
-        include ./blocks/_flickr-widget
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+        footer.footer
+            .container
+                .row
+                    .col-12.col-sm-6.col-md-3
+                        include ./blocks/_accordeon
+                    .col-12.col-sm-6.col-md-3
+                        include ./blocks/_socwid
+                    .col-12.col-sm-6.col-md-3
+                        include ./blocks/_flickr-widget
+                    .col-12.col-sm-6.col-md-3
+                        include ./blocks/_form--mail
+        include ./blocks/_footer-menu
+        
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js")
         script(src="./plugins/owl.carousel.js/owl.carousel.min.js")
-        <script src="./plugins/lightbox/js/lightbox.js"></script>
+        script(src="./plugins/lightbox/js/lightbox.js")
         script(src="./js/scripts.js")
