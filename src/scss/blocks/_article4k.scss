@@ -1,81 +1,118 @@
 .article{
     padding: 0;
-    margin: 0;
+    margin: 15px 0 15px 0;
     background-color: white;
-    &__text {
-        padding: 10px;
-        position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        &--vertical{
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
     }
 }
 .article__text{
     
+    padding: 10px;
     
-     h2{
+    position: relative;
+    
+    &--caption{
         opacity: 0.87;
         color: black;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 18px;
         font-weight: 700;
         line-height: 1.5;
         // padding-top: 20px;
         // padding-bottom: 15px;
-        
-        
     }
-    p{  
+    &--desctiption{  
         opacity: 0.87;
         color: black;
-        // font-family: 'OPENSANS';
+        font-family: 'OPEN SANS';
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-
-        
-        
     }
     hr{
-        width: 825px;
-
-        
         height: 1px;
         opacity: 0.12;
         background-color: black;
+        margin: 0;
+    }
+    &--horizontal{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    &--horizontal >  &--caption{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    &--horizontal >  &--desctiption{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &--vertical >  &--caption{
+        font-size: 14px;
+    }
+    &--vertical >  &--desctiption{
+        font-size: 14px;
+
     }
 }
 .frame{
-    // padding-bottom: 56%;
-    
-    width: 100%;
-    height: calc(width/16*9%);
+    &__superwrap{
+        width: 255px;
+        float: left;
+        &--vertical{
+            float: none;
+            width: 100%;
+        }
+    }
+    &__wrapper{
+        position:relative;
+        padding-bottom:56.25%;
+        padding-top:30px;
+        height:0;
+        overflow:hidden;
+    }
+    position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 
 }
 .article__author{
     padding: 10px;
     display: flex;
+    position: relative;
+    &--horizontal{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    // &--vertical{
+    // }
 
 }
 .author__img{
     width: 54px;
 }
-.frame__wrapper{
-    width: 100%;
-    height: calc(width/16*9%);
-    
-    
-   
-}
+
 .author__text{
     padding: 2px;
-    
     width: 60%;
-    
     position: relative;
     a{
     width: 87px;
     height: 14px;
     opacity: 0.87;
     color: black;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 400;
     line-height: 27px;
@@ -87,18 +124,21 @@
         margin: 0;
         opacity: 0.54;
         color: #212121;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 12px;
         font-weight: 400;
         line-height: 27px;
     }
-    &__btn{
-        padding-left: 30%;
-    }
 }
 .author__btn{
-    padding-left: 30%;
-    padding-top: 2%;
+    position: absolute;
+    right: 17px;
+    bottom: 19px;
+}
+.article__author--horizontal > .author__btn{
+    position: absolute;
+    right: 27px;
+    bottom: 19px;
     
 }
 

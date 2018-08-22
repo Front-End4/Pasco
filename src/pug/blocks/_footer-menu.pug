@@ -1,0 +1,14 @@
+section.footer-menu
+    .container
+        .row
+            .col-md-7
+                +navigation(['Home',['Portfolio','subnav','subnav'],'Blog','Pages','Shop','components','Features'])
+            .col-md-3.offset-md-1.footer-menu__search
+                .input.input__flex
+                    input.input__search(type="text" placeholder='Search')
+                    i.fas.fa-search.icon.icon--round.icon--search
+            .col-md-1.footer-menu__eng
+                a(href='javascript:void(0)').icon.icon--gray.icon--dropdown
+                    i.fas.fa-globe
+                    span.icon__text eng
+            
